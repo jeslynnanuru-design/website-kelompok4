@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f8f3">
+  <meta name="description" content="Pengenalan mata kuliah Pemrograman Web Lanjutan dan kelompok mahasiswa Informatika UKIM.">
+  <title>Pemrograman Web Lanjutan | Kelompok 4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Memuat halaman">
+    <div class="loader-box">
+      <img class="loader-logo" src="images/logo-kampus.png" alt="Logo Universitas Kristen Indonesia Maluku">
+      <p class="loader-campus">UNIVERSITAS KRISTEN<br>INDONESIA MALUKU</p>
+      <p class="loader-course">PEMROGRAMAN WEB LANJUTAN</p>
+      <span class="loader-bar"><i></i></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="atas">
+    <nav class="navbar shell" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+        <img src="images/logo-kampus.png" alt="Logo Universitas Kristen Indonesia Maluku">
+        <span><strong>PWL</strong><small>UKIM · INFORMATIKA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#beranda">Beranda</a><a href="#tentang">Tentang PWL</a><a href="#materi">Materi</a><a href="#teknologi">Teknologi</a><a href="#alur">Alur Kerja</a><a href="#tim">Anggota</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-lines" aria-hidden="true"></div><span class="soft-shape soft-shape-one" aria-hidden="true"></span><span class="soft-shape soft-shape-two" aria-hidden="true"></span><div class="hero-particles" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span></span> UNIVERSITAS KRISTEN INDONESIA MALUKU</p>
+          <p class="hero-academic reveal">Fakultas Ilmu Komputer <i></i> Jurusan Aplikasi <i></i> Program Studi Informatika</p>
+          <h1 class="hero-title reveal">PEMROGRAMAN<br><span>WEB LANJUTAN</span></h1>
+          <p class="hero-subtitle reveal" aria-label="Mengenal Teknologi Web, Membangun Kreativitas, dan Berkarya Bersama."></p>
+          <p class="hero-description reveal">Media pengenalan mata kuliah Pemrograman Web Lanjutan sekaligus ruang untuk memperkenalkan anggota kelompok, teknologi yang dipelajari, dan hasil kerja bersama.</p>
+          <div class="hero-actions reveal"><a class="button button-primary" href="#tentang">JELAJAHI WEBSITE <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#tim">KENALI KELOMPOK</a></div>
+          <div class="hero-note reveal"><span class="note-line"></span> BELAJAR · BERKARYA · BERKEMBANG BERSAMA</div>
+        </div>
+        <div class="hero-art reveal" aria-label="Ilustrasi struktur teknologi web">
+          <div class="art-orbit art-orbit-one"></div><div class="art-orbit art-orbit-two"></div><div class="art-orbit art-orbit-three"></div>
+          <div class="art-center"><span>&lt;/&gt;</span><small>TEKNOLOGI<br>WEB</small></div>
+          <span class="art-tag tag-html">HTML5</span><span class="art-tag tag-css">CSS3</span><span class="art-tag tag-js">JavaScript</span><span class="art-tag tag-api">API</span>
+          <span class="art-caption">STRUKTUR · TAMPILAN · INTERAKSI</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#tentang"><span></span> GULIR UNTUK MENJELAJAH</a>
+    </section>
+
+    <section class="about section-pad" id="tentang">
+      <div class="shell">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span></span> MENGENAL MATA KULIAH</p><h2>Tentang <em>PWL</em></h2></div><p class="section-aside">Memahami web dari sisi pengguna hingga server.</p></div>
+        <div class="about-layout"><div class="about-copy reveal"><p class="lead-copy">Pemrograman Web Lanjutan memperluas cara kita memahami dan membangun aplikasi berbasis web.</p><p>Pemrograman Web Lanjutan merupakan mata kuliah yang mempelajari pengembangan aplikasi berbasis web dengan memanfaatkan berbagai teknologi web. Mahasiswa tidak hanya mempelajari tampilan website, tetapi juga memahami bagaimana browser berkomunikasi dengan server melalui HTTP, penggunaan API, pengolahan data, JavaScript, dan konsep client-server.</p><p>PWL membantu mahasiswa memahami bagaimana sebuah website bekerja, mulai dari tindakan pengguna sampai data diproses dan dikirim kembali oleh server.</p></div><div class="about-cards" id="about-cards"></div></div>
+      </div>
+    </section>
+
+    <section class="materials section-pad section-tint" id="materi">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> DASAR DAN KOMPONEN WEB</p><h2>Materi <em>PWL</em></h2></div><p class="section-aside">Pilih kartu untuk membuka penjelasan singkat dan contoh.</p></div>
+        <div class="materials-grid" id="materials-grid"></div>
+        <div class="status-panel reveal"><div class="status-title"><span class="status-led"></span><strong>CONTOH HTTP STATUS CODES</strong><span>HASIL PERMINTAAN</span></div><div class="status-list"><span><b>200</b> OK · Berhasil</span><span><b>201</b> Created · Data dibuat</span><span><b>400</b> Bad Request · Permintaan tidak valid</span><span><b>401</b> Unauthorized · Belum terautentikasi</span><span><b>404</b> Not Found · Tidak ditemukan</span><span><b>500</b> Internal Server Error · Kesalahan server</span></div></div>
+      </div>
+    </section>
+
+    <section class="technology section-pad" id="teknologi">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> PERANGKAT PEMBELAJARAN</p><h2>Teknologi <em>Web</em></h2></div><p class="section-aside">Teknologi berbeda, bekerja saling melengkapi.</p></div><div class="tech-grid" id="tech-grid"></div></div>
+    </section>
+
+    <section class="workflow section-pad section-tint" id="alur">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> DARI PERMINTAAN KE BALASAN</p><h2>Alur Kerja <em>Web</em></h2></div><p class="section-aside">Lihat perjalanan data saat sebuah halaman digunakan.</p></div>
+        <div class="flow-board reveal"><div class="flow-track" id="flow-track"></div><div class="flow-footer"><div class="flow-legend"><span><i></i> PERMINTAAN</span><span><i></i> BALASAN</span></div><button class="text-button" id="replay-flow" type="button">ULANGI ANIMASI <b aria-hidden="true">↻</b></button></div></div>
+        <p class="flow-explanation reveal">Browser mengirim HTTP Request ke server atau API. Server dapat mengambil data dari database, lalu mengirim HTTP Response kembali ke browser untuk ditampilkan kepada pengguna.</p>
+      </div>
+    </section>
+
+    <section class="benefits section-pad" id="manfaat">
+      <div class="shell benefits-layout"><div class="benefits-intro reveal"><p class="eyebrow"><span></span> KEMAMPUAN UNTUK MASA DEPAN</p><h2>Mengapa Belajar <em>PWL?</em></h2><p>Pembelajaran ini menggabungkan keterampilan teknis, logika, kreativitas, dan kolaborasi.</p><div class="benefit-mark"><strong>08</strong><span>MANFAAT PEMBELAJARAN</span></div></div><div class="benefits-grid" id="benefits-grid"></div></div>
+    </section>
+
+    <section class="team section-pad section-tint" id="tim">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> KELOMPOK PEMROGRAMAN WEB LANJUTAN</p><h2>Anggota <em>Kelompok</em></h2></div><p class="section-aside">Lima anggota, berbagi peran dan tujuan.</p></div><div class="team-grid" id="team-grid"></div></div>
+    </section>
+
+    <section class="responsibilities section-pad" id="tugas">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> KERJA BERSAMA, PERAN TERARAH</p><h2>Pembagian <em>Tugas</em></h2></div><p class="section-aside">Data peran dapat diubah pada satu array JavaScript.</p></div><div class="task-list" id="task-list"></div></div>
+    </section>
+
+    <section class="journey section-pad section-tint" id="perjalanan">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> LANGKAH MENUJU HASIL</p><h2>Perjalanan <em>Proyek</em></h2></div><p class="section-aside">Dari rencana awal hingga presentasi.</p></div><div class="journey-track" id="journey-track"></div></div>
+    </section>
+
+    <section class="project section-pad" id="proyek">
+      <div class="shell project-layout"><div class="project-copy reveal"><p class="eyebrow"><span></span> HASIL KERJA KELOMPOK</p><h2>Website Pengenalan Kelompok<br><em>Pemrograman Web Lanjutan</em></h2><p>Website ini dibuat untuk memperkenalkan mata kuliah PWL, teknologi web yang dipelajari, anggota kelompok, pembagian tugas, dan hasil kerja bersama.</p><div class="project-stats" id="project-stats"></div></div>
+        <div class="showcase reveal"><div class="showcase-top"><span class="showcase-dot"></span><span class="showcase-dot"></span><span class="showcase-dot"></span><small>PRATINJAU WEBSITE KELOMPOK</small></div><div class="showcase-screen"><span class="showcase-kicker">UKIM · INFORMATIKA</span><strong>PEMROGRAMAN<br><em>WEB LANJUTAN</em></strong><span>Mengenal Teknologi Web, Membangun Kreativitas, dan Berkarya Bersama.</span><div class="showcase-avatars"><i>BW</i><i>GT</i><i>JD</i><i>JE</i><i>YL</i><b>5 ANGGOTA</b></div></div><div class="showcase-base"></div><p class="showcase-caption">HASIL KOLABORASI HTML · CSS · JAVASCRIPT</p></div>
+      </div>
+    </section>
+
+    <section class="academic section-pad section-green" id="akademik">
+      <div class="shell academic-layout"><div class="academic-heading reveal"><p class="eyebrow"><span></span> IDENTITAS AKADEMIK</p><h2>Universitas Kristen<br>Indonesia Maluku</h2><p>Informasi mata kuliah dan program studi kelompok.</p></div><div class="academic-card reveal"><div><span>FAKULTAS</span><strong>ILMU KOMPUTER</strong></div><div><span>JURUSAN</span><strong>APLIKASI</strong></div><div><span>PROGRAM STUDI</span><strong>INFORMATIKA</strong></div><div><span>MATA KULIAH</span><strong>PEMROGRAMAN WEB LANJUTAN</strong></div><div><span>DOSEN PENGAMPU</span><strong>Roberth Manaha, S.Kom., M.Kom.</strong></div></div></div>
+    </section>
+
+    <section class="contact section-pad" id="kontak">
+      <div class="shell"><div class="section-heading reveal"><div><p class="eyebrow"><span></span> INFORMASI DAN PESAN</p><h2>Hubungi <em>Kelompok</em></h2></div><p class="section-aside">Formulir ini menampilkan konfirmasi di halaman, tanpa mengirim data ke server.</p></div>
+        <div class="contact-layout"><div class="contact-details reveal"><p class="contact-lead">Universitas Kristen Indonesia Maluku</p><div><span>FAKULTAS</span><strong>Ilmu Komputer</strong></div><div><span>JURUSAN</span><strong>Aplikasi</strong></div><div><span>PROGRAM STUDI</span><strong>Informatika</strong></div><div><span>MATA KULIAH</span><strong>Pemrograman Web Lanjutan</strong></div><div><span>DOSEN</span><strong>Roberth Manaha, S.Kom., M.Kom.</strong></div></div>
+          <form class="contact-form reveal" id="contact-form">
+            <label for="contact-name">Nama</label><input id="contact-name" name="nama" type="text" autocomplete="name" placeholder="Nama Anda" required minlength="2">
+            <label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+            <label for="contact-message">Pesan</label><textarea id="contact-message" name="pesan" rows="4" placeholder="Tulis pesan Anda" required minlength="5"></textarea>
+            <button class="button button-primary" type="submit">KIRIM PESAN <span aria-hidden="true">↗</span></button><p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-main"><a class="footer-brand" href="#beranda"><img src="images/logo-kampus.png" alt="Logo Universitas Kristen Indonesia Maluku"><span><strong>UNIVERSITAS KRISTEN<br>INDONESIA MALUKU</strong><small>PEMROGRAMAN WEB LANJUTAN</small></span></a><p class="footer-motto">Belajar, Berkarya, dan Berkembang Bersama.</p><div class="footer-identity"><span>FAKULTAS ILMU KOMPUTER</span><span>JURUSAN APLIKASI · INFORMATIKA</span></div><a class="back-top-link" href="#atas" aria-label="Kembali ke atas">↑</a></div><div class="shell footer-bottom"><span>© 2026 Kelompok Pemrograman Web Lanjutan</span><span>HTML · CSS · JAVASCRIPT</span></div></footer>
+
+  <div class="modal" id="detail-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-modal-close></div><div class="modal-panel" role="document"><button class="modal-close" type="button" aria-label="Tutup jendela">×</button><div class="modal-content" id="modal-content"></div></div></div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Kembali ke atas">↑</button>
+</body>
+</html>
